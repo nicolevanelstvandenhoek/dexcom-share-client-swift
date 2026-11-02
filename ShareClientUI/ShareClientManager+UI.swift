@@ -8,10 +8,9 @@
 import SwiftUI
 import LoopKit
 import LoopKitUI
-import HealthKit
 import ShareClient
 
-extension ShareClientManager: CGMManagerUI {
+extension ShareClientManager: @retroactive CGMManagerUI {
     public static var onboardingImage: UIImage? {
         return nil
     }
